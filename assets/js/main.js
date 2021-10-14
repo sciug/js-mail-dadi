@@ -32,21 +32,46 @@ const emailMessage = document.getElementById("email_message")
 
 
 
+const playButton= document.getElementById("startGame")
+const playAgainButton = document.getElementById("play_again")
+const gameMessage = document.getElementById("gameMessage")
+const mainBlur = document.getElementById("main")
+playButton.addEventListener("click", function(){
+    const myNumber = Math.floor((Math.random() * 10) + 1);
+    const pcNumber = Math.floor((Math.random() * 10) + 1);
+    gameMessage.classList.remove("hidden")
+    mainBlur.classList.add("blur")
 
-const myNumber = Math.floor((Math.random() * 10) + 1);
-const pcNumber = Math.floor((Math.random() * 10) + 1);
-
-
-const userNumber = document.getElementById("userNumber")
-const botNumber = document.getElementById("botNumber")
-
-userNumber.innerHTML = myNumber
-botNumber.innerHTML = pcNumber
-
-if(myNumber == pcNumber){
-
-}else if (myNumber > pcNumber){
-
-}else{
     
-}
+    
+    const userNumber = document.getElementById("userNumber")
+    const botNumber = document.getElementById("botNumber")
+    
+    userNumber.innerHTML = myNumber
+    botNumber.innerHTML = pcNumber
+    const winOrLose = document.getElementById("winOrLose")
+
+
+    
+    if(myNumber == pcNumber){
+        winOrLose.innerHTML = `<p class="winOrLose">It's a draw..<span class="emoji_result"> &#129300;</span></p>`
+    
+    }else if (myNumber > pcNumber){
+        winOrLose.innerHTML = `<p class="winOrLose">you win!<span class="emoji_result">&#128515;</span></p>`
+    
+    }else{winOrLose.innerHTML = `<p class="winOrLose">you lost..<span class="emoji_result">&#128549;</span></p>`
+    
+    }
+})
+
+
+
+
+playAgainButton.addEventListener("click", function(){
+    gameMessage.classList.add("hidden")
+    mainBlur.classList.remove("blur")
+
+    
+    
+
+})

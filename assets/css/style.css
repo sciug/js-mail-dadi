@@ -6,8 +6,11 @@
 
 body{
     background-color: whitesmoke;
+    padding:2rem;
 }
-
+button:hover{
+    cursor: pointer;
+}
 
 .main_container{
     height: 50vh;
@@ -86,7 +89,7 @@ color: grey;
     font-size: 2rem;
     color: grey;
     font-weight: bold;
-    text-shadow: -1px 1px 0px grey,
+   /*  text-shadow: -1px 1px 0px grey,
     -2px 2px 0px grey,
     -3px 3px 0px grey,
     -4px 4px 0px grey,
@@ -100,7 +103,7 @@ color: grey;
     transform: skew(0deg, 356deg);
      line-height: 5.2rem;
      font-family: 'Work Sans', sans-serif;
-     color: rgb(224, 224, 224);
+     color: rgb(224, 224, 224); */
 }
 .user>p:first-child,
 .bot>p:first-child{
@@ -121,4 +124,50 @@ color: grey;
     color: grey;
     margin-top: .3rem;
     font-size: 2rem;
+}
+#startGame, .play_again{
+    background-color: grey;
+    margin-top: 1.5rem;
+    border: none;
+    padding: .5rem 5rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgb(165, 164, 164);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.gameMessage{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow:0px 0px 10px rgb(165, 164, 164) ;
+    padding: 2rem 1.5rem;
+}
+.winOrLose {
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 800;
+}
+
+.emoji_result{
+    font-size: 5rem;
+    margin-left: 3rem;
+}
+.play_again{
+    margin-top: 3rem;
+}
+
+
+.hidden{
+    display: none;
+}
+.blur{
+    filter: blur(5px);
+   
 }
