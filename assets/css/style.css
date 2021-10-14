@@ -15,7 +15,7 @@ body{
 
 .box_container{
     background-color: white;
-    padding: 3rem;
+    padding: 3rem 3rem;
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgb(219, 219, 219);
     
@@ -32,6 +32,11 @@ body{
 .d-flex{
     display: flex;
    
+}
+
+.d-flex_column{
+    display: flex;
+    flex-direction: column;
 }
 .justify_center{
     justify-content: center;
@@ -73,11 +78,47 @@ color: grey;
 
 /* dice game */
 .emoji_battle{
-    font-size: 6rem;
+    font-size: 3rem;
+    margin: 2.5rem 0;
 }
 
 .vs{
-    font-size: 3rem;
+    font-size: 2rem;
     color: grey;
     font-weight: bold;
+    text-shadow: -1px 1px 0px grey,
+    -2px 2px 0px grey,
+    -3px 3px 0px grey,
+    -4px 4px 0px grey,
+    -5px 5px 0px grey,
+    -6px 6px 0px grey,
+    -7px 7px 0px grey,
+    -8px 8px 0px grey,
+    -9px 9px 0px grey,
+    -10px 10px 0px grey;
+                 
+    transform: skew(0deg, 356deg);
+     line-height: 5.2rem;
+     font-family: 'Work Sans', sans-serif;
+     color: rgb(224, 224, 224);
+}
+.user>p:first-child,
+.bot>p:first-child{
+    font-size: 2rem ;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: grey;
+    text-transform: uppercase;
+}
+.number{
+    color: rgb(165, 164, 164);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#userNumber, #botNumber{
+    font-weight: 800;
+    color: grey;
+    margin-top: .3rem;
+    font-size: 2rem;
 }

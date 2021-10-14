@@ -37,3 +37,16 @@ const myNumber = Math.floor((Math.random() * 10) + 1);
 const pcNumber = Math.floor((Math.random() * 10) + 1);
 
 
+const userNumber = document.getElementById("userNumber")
+const botNumber = document.getElementById("botNumber")
+
+userNumber.innerHTML = myNumber
+botNumber.innerHTML = pcNumber
+
+if(myNumber == pcNumber){
+
+}else if (myNumber > pcNumber){
+
+}else{
+    
+}
