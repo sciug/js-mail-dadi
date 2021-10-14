@@ -202,6 +202,7 @@ color: grey;
 
 .hidden{
     display: none;
+    
 }
 .blur{
     filter: blur(3px);

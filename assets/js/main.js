@@ -49,6 +49,8 @@ playButton.addEventListener("click", function(){
     const pcNumber = Math.floor((Math.random() * 10) + 1);
     gameMessage.classList.remove("hidden")
     mainBlur.classList.add("blur")
+    accessResult.classList.add("hidden")
+
 
     
     
