@@ -4,9 +4,45 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header{background-color: white;
+padding: 2rem;}
+
+.nav-list{
+    margin-left: auto;
+    list-style: none;
+}
+.nav-list li{
+    margin: 0 .5rem;
+    color: grey;
+}
+li.log_in{
+    color: white;
+    background-color: #ffc83d;
+    padding: .5rem 1rem;
+    border-radius: 25px;
+}
+.logo_sign{
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: -6px;
+}
+
+.logo_wrapper{
+    align-items: flex-end;
+}
+
+.fa-dice{
+    color: grey;
+    font-size: 1.8rem;
+
+}
+
+
 body{
     background-color: whitesmoke;
-    padding:2rem;
+   
 }
 button:hover{
     cursor: pointer;
@@ -86,7 +122,7 @@ color: grey;
 }
 
 .vs{
-    font-size: 2rem;
+    font-size: 4em;
     color: grey;
     font-weight: bold;
    /*  text-shadow: -1px 1px 0px grey,
@@ -121,7 +157,7 @@ color: grey;
 }
 #userNumber, #botNumber{
     font-weight: 800;
-    color: grey;
+    color: #ffc83d;
     margin-top: .3rem;
     font-size: 2rem;
 }
