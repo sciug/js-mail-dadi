@@ -10,5 +10,10 @@ body{
 
 .box_container{
     background-color: white;
-    
+
+}
+
+.d-flex{
+    display: flex;
+   
 }

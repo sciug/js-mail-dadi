@@ -14,10 +14,18 @@ const userEmail = prompt("insert ypur email")
 //verifico ogni elemento dell'array con il valore del prompt
 //stampo un messaggio in html a seconda se l'email inserita è corretta o meno
 
+
+//creo variabili necessarie per stampare messaggio in html
+
+
+
+
 for (let i=0; i < allowedEmails.length; i++){
+const emailMessage = document.getElementById("email_message")
+
     if(userEmail == allowedEmails[i]){
-        console.log("ok") 
+        emailMessage.textContent = "Welcome Back!"
     }else{
-        console.log("NO")
+        emailMessage.textContent = "Oops!sara@gmail.com something went wrong"
     }
 }
