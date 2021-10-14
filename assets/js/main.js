@@ -24,8 +24,16 @@ for (let i=0; i < allowedEmails.length; i++){
 const emailMessage = document.getElementById("email_message")
 
     if(userEmail == allowedEmails[i]){
-        emailMessage.textContent = "Welcome Back!"
+        emailMessage.innerHTML = `<p class="welcome">Welcome back!<span class="emoji_happy">&#128515;</span></p>`
     }else{
-        emailMessage.textContent = "Oops!sara@gmail.com something went wrong"
-    }
+        emailMessage.innerHTML = `<p class="wrong_email"><span class="ops">Oops! <span class="emoji_sad">&#128549;</span></span>something went wrong <span class="check_email">please check if your email is correct</span></p>`
 }
+}
+
+
+
+
+const myNumber = Math.floor((Math.random() * 10) + 1);
+const pcNumber = Math.floor((Math.random() * 10) + 1);
+
+

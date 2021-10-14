@@ -8,12 +8,76 @@ body{
     background-color: whitesmoke;
 }
 
+
+.main_container{
+    height: 50vh;
+}
+
 .box_container{
     background-color: white;
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgb(219, 219, 219);
+    
 
 }
 
+
+.width{
+    width: 40%;
+}
+.width_100{
+    width: 100%;
+}
 .d-flex{
     display: flex;
    
+}
+.justify_center{
+    justify-content: center;
+} 
+.justify_space{
+    justify-content: space-evenly;
+}
+
+.align_center{
+    align-items: center;
+}
+
+
+
+
+.ops, .welcome{font-size:5rem;
+    font-weight: bold;
+display: block;
+color: grey;
+}
+.wrong_email{
+    font-size:1.5rem;
+    color: grey
+}
+
+.emoji_sad, .emoji_happy{
+    margin-left: 10rem;
+    font-size: 5rem;
+}
+.check_email{
+    display: block;
+    font-size: .8rem;
+    color: rgb(155, 155, 155);
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+
+
+/* dice game */
+.emoji_battle{
+    font-size: 6rem;
+}
+
+.vs{
+    font-size: 3rem;
+    color: grey;
+    font-weight: bold;
 }
