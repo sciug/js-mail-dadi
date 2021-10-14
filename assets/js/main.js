@@ -1,30 +1,26 @@
 
 
 //creo array con email
-const allowedEmails = ["mario@gmail.com",
-                        "sara@gmail.com",
-                        "marta@gmail.com",
-                        "chiara@gmail.com",
-                        "martina@gmail.com"]
-
+const allowedEmails = ["mario@gmail.com","sara@gmail.com","marta@gmail.com","chiara@gmail.com","martina@gmail.com"]
 // creo prompt con email da inserire
- 
+
 const confirmEmail = document.getElementById("confirm_btn")
 const accessResult = document.getElementById("emailAccess")
+
 confirmEmail.addEventListener("click", function(){
     accessResult.classList.remove("hidden")
-    for (let i=0; i < allowedEmails.length; i++){
-        const userEmail = document.getElementById("userEmail")
+    const userEmail = document.getElementById("userEmail")
         const emailMessage = document.getElementById("email_message")
-        
-            if(userEmail.value == allowedEmails[i]){
+    
+       
+            if(allowedEmails.includes(userEmail.value)){
                 emailMessage.innerHTML = `<p class="welcome">Welcome back!<span class="emoji_happy">&#128515;</span></p>`
-            }else{
+            }
+            else{
                 emailMessage.innerHTML = `<p class="wrong_email"><span class="ops">Oops! <span class="emoji_sad">&#128549;</span></span>something went wrong <span class="check_email">please check if your email is correct</span></p>`
-        }
-        }
+               }
         
-
+        
 })
 
 //verifico ogni elemento dell'array con il valore del prompt
