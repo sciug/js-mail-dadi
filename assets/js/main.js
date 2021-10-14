@@ -43,6 +43,11 @@ const playButton= document.getElementById("startGame")
 const playAgainButton = document.getElementById("play_again")
 const gameMessage = document.getElementById("gameMessage")
 const mainBlur = document.getElementById("main")
+
+
+
+
+
 playButton.addEventListener("click", function(){
     const myNumber = Math.floor((Math.random() * 10) + 1);
     const pcNumber = Math.floor((Math.random() * 10) + 1);
@@ -77,7 +82,7 @@ playButton.addEventListener("click", function(){
 playAgainButton.addEventListener("click", function(){
     gameMessage.classList.add("hidden")
     mainBlur.classList.remove("blur")
-
+   
     
     
 
